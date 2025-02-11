@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Website</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky color="#33FFA5"></a-sky>
+      <a-torus
+        position="3 1.5 9"
+        color="orange"
+        animation="property: rotation; to: 0 360 0; dir: alternate; dur: 3000; loop: true"
+      >
+      </a-torus>
+      <a-plane
+        position="0 0 0"
+        color="#000000"
+        rotation="-90 0 0"
+        width="20px"
+        height="20px"
+      ></a-plane>
+      <a-cylinder
+        position="5 1.5 7"
+        color="blue"
+        animation="property: position; to: 0 2.5 0; dir: alternate; dur: 3000; loop: true"
+      ></a-cylinder>
+      <a-torus-knot
+        position="3 2 8"
+        color="red"
+        animation="property: position; to: 0 2.5 0; dir: alternate; dur: 3000; loop: true"
+      ></a-torus-knot>
+      <a-sphere
+        color="blue"
+        position="0 1.5 0"
+        animation="property: position; to: 0 2.5 0; dir: alternate; dur: 3000; loop: true"
+      ></a-sphere>
+      <a-box></a-box>
+    </a-scene>
+  </body>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</html>
